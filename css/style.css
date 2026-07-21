@@ -1,0 +1,205 @@
+/* The Press Line - Main Styles */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.6;
+}
+
+/* Top Bar */
+
+.top-bar{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-size:14px;
+}
+
+/* Logo */
+
+.logo{
+    text-align:center;
+    padding:25px;
+    background:white;
+}
+
+.logo h1{
+    font-size:48px;
+    color:#b30000;
+    letter-spacing:2px;
+}
+
+.logo p{
+    color:#666;
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#b30000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#800000;
+}
+
+/* Breaking News */
+
+.breaking-news{
+    background:#ffd700;
+    padding:10px;
+    font-weight:bold;
+    color:#111;
+}
+
+/* Main Story */
+
+.hero{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.main-story{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+}
+
+.main-story h2{
+    font-size:36px;
+    line-height:1.3;
+    margin-bottom:15px;
+}
+
+.main-story p{
+    color:#555;
+}
+
+.main-story button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#b30000;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.main-story button:hover{
+    background:#800000;
+}
+
+
+/* Images */
+
+.hero-image img{
+    width:100%;
+    border-radius:8px;
+}
+
+
+/* Latest News */
+
+.latest-news{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.latest-news h2{
+    border-left:6px solid #b30000;
+    padding-left:12px;
+    margin-bottom:25px;
+}
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    font-size:20px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#666;
+}
+
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+
+/* Mobile Design */
+
+@media(max-width:768px){
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .logo h1{
+        font-size:32px;
+    }
+
+    nav a{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .main-story h2{
+        font-size:26px;
+    }
+
+}
