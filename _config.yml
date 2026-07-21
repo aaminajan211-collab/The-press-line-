@@ -1,0 +1,6 @@
+title: The Press Line
+description: The Voice of Kashmir
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
